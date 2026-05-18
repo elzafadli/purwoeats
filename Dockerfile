@@ -11,6 +11,7 @@ RUN npm ci
 FROM base AS builder
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+RUN mkdir -p public
 RUN npm run build
 
 FROM node:22-alpine AS runner
