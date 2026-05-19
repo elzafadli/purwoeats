@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ProductShowcase, ProductShowcaseFlavor } from "./v3/ProductShowcase";
+import { ProductShowcase } from "./ProductShowcase";
+import type { ProductShowcaseFlavor } from "./ProductShowcase";
 
 type IconName =
   | "arrow_back"

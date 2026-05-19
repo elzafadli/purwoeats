@@ -46,8 +46,10 @@ a {
     "wght" 300,
     "GRAD" 0,
     "opsz" 24;
-  letter-spacing: 0;
+  font-feature-settings: "liga";
+  letter-spacing: normal;
   line-height: 1;
+  text-transform: none;
   vertical-align: middle;
 }
 
