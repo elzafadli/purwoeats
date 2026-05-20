@@ -2,9 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Purwoeats | Food Delivery Lokal Purwokerto",
+  title: "PurwoEats - Cari Kuliner Purworejo",
   description:
-    "Pesan makanan lokal Purwokerto dari warung, kopi, dan dapur favorit lewat Purwoeats.",
+    "Platform kuliner lokal Purworejo. Temukan cafe, eatery, dan UMKM makanan terbaik.",
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: "/icon.png",
     apple: "/icon.png",

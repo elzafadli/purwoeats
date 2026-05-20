@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://purwoeats.my.id
+
+# Sitemaps
+Sitemap: https://purwoeats.my.id/sitemap.xml
