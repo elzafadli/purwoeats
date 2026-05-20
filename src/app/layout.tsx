@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "18FrNmY9RhgKB4ph9xBt7ABqR_eFmTSJRe2kNurc_-Q",
+  },
   icons: {
     icon: "/icon.png",
     apple: "/icon.png",
