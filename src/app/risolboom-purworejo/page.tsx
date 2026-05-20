@@ -140,14 +140,14 @@ export default function RisolBoomV3Page() {
           className="relative overflow-hidden bg-[radial-gradient(circle_at_78%_18%,#f4f2df_0,#edf1d5_28%,#f9f8e9_58%,#f3f5df_100%)]"
         >
           <div className="absolute -left-12 bottom-3 h-20 w-52 rotate-[-8deg] bg-[radial-gradient(circle,#7d9a30_0_2px,transparent_3px)] bg-[length:12px_12px] opacity-55" />
-          <div className="absolute right-8 top-44 hidden size-32 rounded-full bg-[#6c8834] text-white md:grid md:place-items-center">
+          <div className="absolute right-8 top-44 z-30 hidden size-32 rounded-full bg-[#6c8834] text-white md:grid md:place-items-center">
             <span className="rotate-6 text-center text-2xl font-black italic leading-tight">
               NEW
               <br />
               MENU!
             </span>
           </div>
-          <div className="absolute right-12 top-56 hidden text-[#6c8834] lg:block">
+          <div className="absolute right-44 top-52 z-30 hidden text-[#6c8834] lg:block">
             <Icon name="local_florist" className="!text-5xl rotate-45" />
           </div>
 

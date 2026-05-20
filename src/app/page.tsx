@@ -1,3 +1,6 @@
+import Image from "next/image";
+import purwoeatsLogo from "./risolboom-purworejo/icon.png";
+
 type IconName =
   | "add_business"
   | "bookmark"
@@ -102,6 +105,14 @@ const events = [
   },
 ];
 
+const socialLinks = [
+  {
+    label: "TikTok",
+    shortLabel: "TT",
+    href: "https://www.tiktok.com/@purwoeats",
+  },
+];
+
 const cityImages = [
   "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80",
   "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=500&q=80",
@@ -128,13 +139,12 @@ function Icon({
 function Logo({ light = false }: { light?: boolean }) {
   return (
     <div className="flex items-center gap-3">
-      <div
-        className={`grid size-11 place-items-center border ${
-          light ? "border-white" : "border-[#10261b]"
-        }`}
-      >
-        <span className="text-2xl italic leading-none">P</span>
-      </div>
+      <Image
+        src={purwoeatsLogo}
+        alt="PurwoEats logo"
+        className="size-11 rounded-xl"
+        priority
+      />
       <div>
         <p className="text-[22px] font-semibold uppercase leading-none tracking-[0.18em]">
           Purwoeats
@@ -176,13 +186,13 @@ export default function Home() {
           <Logo light />
           <nav className="hidden items-center gap-10 text-[15px] font-semibold lg:flex">
             {[
-              "Beranda",
-              "Cafe",
-              "Eatery",
-              "Event",
-              "Promo",
-              "Artikel",
-              "Tentang Kami",
+              // "Beranda",
+              // "Cafe",
+              // "Eatery",
+              // "Event",
+              // "Promo",
+              // "Artikel",
+              // "Tentang Kami",
             ].map((item, index) => (
               <a
                 key={item}
@@ -195,20 +205,7 @@ export default function Home() {
               </a>
             ))}
           </nav>
-          <div className="flex items-center gap-6">
-            {/* <button aria-label="Cari">
-              <Icon name="search" className="!text-3xl" />
-            </button>
-            <button aria-label="Simpan">
-              <Icon name="bookmark" className="!text-3xl" />
-            </button> */}
-            <button
-              aria-label="Menu"
-              className="grid size-12 place-items-center rounded-full bg-[#123b2a]"
-            >
-              <Icon name="menu" className="!text-3xl" />
-            </button>
-          </div>
+          <div className="flex items-center gap-6"></div>
         </header>
 
         <div className="relative z-10 mx-auto grid max-w-[1280px] items-center gap-14 px-8 pb-12 pt-8 lg:grid-cols-[1.05fr_0.95fr]">
@@ -499,14 +496,14 @@ export default function Home() {
           <div>
             <Logo />
             <div className="mt-8 flex gap-3">
-              {["IG", "TikTok", "Web"].map((item) => (
+              {socialLinks.map(({ label, shortLabel, href }) => (
                 <a
-                  key={item}
-                  href="#"
-                  aria-label={item}
-                  className="grid size-10 place-items-center rounded-full border border-[#10261b]/15 bg-white text-xs font-black text-[#10261b]"
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  className="grid size-10 place-items-center rounded-full border border-[#10261b]/15 bg-white text-[10px] font-black uppercase tracking-[0.08em] text-[#10261b]"
                 >
-                  {item}
+                  {shortLabel}
                 </a>
               ))}
             </div>

@@ -117,8 +117,8 @@ export default function DaftarkanUsahamuPage() {
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5f4e3f]">
               Bantu cafe, eatery, resto, dan UMKM kuliner Purworejo punya
-              halaman yang rapi, mudah dibagikan, dan siap dipakai untuk
-              promosi harian.
+              halaman yang rapi, mudah dibagikan, dan siap dipakai untuk promosi
+              harian.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -198,7 +198,7 @@ export default function DaftarkanUsahamuPage() {
               </div>
 
               <a
-                href="https://wa.me/6281234567890?text=Halo%20PurwoEats%2C%20saya%20ingin%20daftarkan%20usaha%20saya."
+                href="https://wa.me/6289654666583?text=Halo%20PurwoEats%2C%20saya%20ingin%20daftarkan%20usaha%20saya."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-flex h-14 w-full items-center justify-center gap-2 rounded-xl bg-[#245f3f] px-7 text-center font-black text-white shadow-[0_14px_35px_rgba(36,95,63,0.25)]"
@@ -240,9 +240,7 @@ export default function DaftarkanUsahamuPage() {
                 <h3 className="mt-5 font-serif text-2xl font-bold">
                   {benefit.title}
                 </h3>
-                <p className="mt-3 leading-7 text-[#6b5a47]">
-                  {benefit.text}
-                </p>
+                <p className="mt-3 leading-7 text-[#6b5a47]">{benefit.text}</p>
               </article>
             ))}
           </div>
@@ -259,9 +257,9 @@ export default function DaftarkanUsahamuPage() {
               Prosesnya dibuat ringan.
             </h2>
             <p className="mt-5 max-w-xl leading-8 text-white/78">
-              Cukup kirim nama usaha, alamat, jam buka, kontak, foto produk
-              atau tempat, menu unggulan, dan link sosial media. Tim PurwoEats
-              bantu susun menjadi halaman yang enak dilihat.
+              Cukup kirim nama usaha, alamat, jam buka, kontak, foto produk atau
+              tempat, menu unggulan, dan link sosial media. Tim PurwoEats bantu
+              susun menjadi halaman yang enak dilihat.
             </p>
           </div>
 
